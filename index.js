@@ -24,15 +24,7 @@ fetch(url)
 
 getUsers();
 
-let names = ['daddy','mummy', 'child'];
-
-names.forEach(element => {
-    
-    document.getElementById('demo1').innerHTML = `<h1>${names}</h1> </br>`  ;
-    console.log(names);
-    
-});
-
+// Second Api request
 
 
 
@@ -57,7 +49,7 @@ fetch('https://cors.io/?http://www.lolnas.fi/api/restaurants.json')
      });
     document.getElementById('demo2').innerHTML = outlet;
 }).catch((err)=>{
-  console.log(`Can't not fetch API ${err}`)
+  console.log(`Can't not fetch Restaurants API ${err}`)
 });
 }
 
